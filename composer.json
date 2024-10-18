@@ -1,0 +1,14 @@
+{
+  "name": "l7ssha/yasumi-test",
+  "type": "application",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.3",
+    "azuyalabs/yasumi": "^2.7",
+    "initphp/cli-table": "^1.0"
+  }
+}
