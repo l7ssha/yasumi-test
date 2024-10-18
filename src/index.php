@@ -56,6 +56,6 @@ function displayTable(array $countries, array $matrix): void
     echo $table;
 }
 
-displayTable(...getHolidaysMatrix([France::class, France\Moselle::class], 2025));
+displayTable(...getHolidaysMatrix([France::class, France\Moselle::class, France\BasRhin::class, France\HautRhin::class], 2025));
 displayTable(...getHolidaysMatrix([Germany::class, Germany\Berlin::class], 2025));
 displayTable(...getHolidaysMatrix([Poland::class], 2025));
