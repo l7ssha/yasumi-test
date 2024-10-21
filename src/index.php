@@ -18,12 +18,11 @@ use Yasumi\Yasumi;
  */
 function getHolidaysMatrix(array $countries, int $year): array
 {
-
     /** @var array<string, array<string, array<string>>> $holidaysMatrix */
     $holidaysMatrix = [];
 
     foreach ($countries as $country) {
-        foreach (Yasumi::create($country, 2025)->getHolidays() as $holiday) {
+        foreach (Yasumi::create($country, $year)->getHolidays() as $holiday) {
             $holidaysMatrix[$holiday->format('Y-m-d')][$country] = $holiday->getName();
         }
     }
